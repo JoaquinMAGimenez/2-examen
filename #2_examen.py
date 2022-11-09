@@ -17,11 +17,28 @@ f. determinar si Grogu esta en el árbol y responder lo siguiente:
 import modulo_arbol
 
 arbol_jedi = modulo_arbol.nodoArbol()
-JEDIS = [       
-        {'nombre':'qui-gon jin','altura':'1.93','peso': '75'},
-        {'nombre':'yoda','altura':'0.45','peso': '15'},
-        { 'nombre':'asoka','altura':'1.45','peso': '55'},
-] 
+JEDIS =[        
+            {'nombre':'qui-gon jin','altura':'1.93','peso': '75'},
+            {'nombre':'yoda','altura':'0.45','peso': '15'},
+            { 'nombre':'asoka','altura':'1.45','peso': '55'},
+            {'nombre':'mandalorian', 'altura': 1.85,'peso': 76},
+            {'nombre':'mace windu', 'altura': 1.82,'peso': 74}
+            {'nombre':'plo koon', 'altura': 1.74,'peso': 72},
+            {'nombre':'yaddle', 'altura': 1.79,'peso': 71},
+            {'nombre':'adi gallia', 'altura': 1.85,'peso': 68},
+            {'nombre':'kit fisto', 'altura': 1.88,'peso': 87},
+            {'nombre':'luminara unduli', 'altura': 1.93,'peso': 77},
+            {'nombre':'sifo-dyas', 'altura': 1.99,'peso': 97},
+            {'nombre':'bultar swan', 'altura': 1.84,'peso': 99},
+            {'nombre':'agen kolar', 'altura': 1.77,'peso': 107},
+            {'nombre':'stass allie', 'altura': 1.73,'peso': 100},
+            {'nombre':'asajj ventress', 'altura': 1.37,'peso': 84},
+            {'nombre':'nahdar vebb', 'altura': 0.58,'peso': 66},
+            {'nombre':'bolla ropal', 'altura': 1.85,'peso': 62},
+            {'nombre':'leia organa', 'altura': 1.55,'peso': 65},
+            {'nombre':'grogu', 'altura': 1.99,'peso': 120},
+            {'nombre':'obi-wan kenobi', 'altura': 1.64,'peso': 57},   
+]
 
 
 
@@ -59,3 +76,4 @@ if( j['nombre'] == 'Grogu'):
   nodo_buscado = modulo_arbol.busqueda(arbol_jedi, "Grogu")
   nodo_buscado2 = modulo_arbol.busqueda(arbol_jedi, altura)
 print('Informacion de Grogu: ', nodo_buscado)
+print('la altura de Grogu es:', nodo_buscado2)

@@ -391,17 +391,7 @@ class Grafo():
 
         return paises
 
-    def cantidad_de_capitulos_mayores_que_2(self):
-        cant_de_capitulos =[]
-        aux = self.__inicio
-        while aux is not None:
-            capitulos = aux.datos['capitulos']         #metodo para contar en cuantos capitulos se relacionaron los personajes
 
-            for e in capitulos:
-                if aux.datos [int] > 2:
-                    cant_de_capitulos.append(e)
-            aux=aux.sig
-        return cant_de_capitulos
 
 
 #! algoritmos especiales dijkstra prim kruskal
